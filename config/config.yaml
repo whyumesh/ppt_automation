@@ -1,0 +1,33 @@
+paths:
+  templates_dir: "templates/"
+  cache_dir: "cache/"
+  output_dir: "output/"
+  logs_dir: "logs/"
+
+settings:
+  use_nlp: true
+  max_bullets_per_slide: 6
+  min_bullet_length: 20
+  max_bullet_length: 200
+  cache_templates: true
+  log_level: "INFO"
+
+content_schema:
+  required_fields:
+    - title
+    - slide_type
+  optional_fields:
+    - content
+    - section
+    - notes
+
+slide_types:
+  - title
+  - content
+  - section_header
+  - two_column
+  - closing
+
+performance:
+  chunk_size: 100
+  max_slides_per_batch: 50
